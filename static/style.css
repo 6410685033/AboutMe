@@ -159,3 +159,38 @@ nav>a {
 #toTopBtn:hover {
     background-color: #555;
 }
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    .container {
+        padding: 0.5em;
+    }
+
+    .site-header {
+        padding: 0.5em;
+    }
+
+    nav {
+        flex-direction: column;
+    }
+
+    nav > a {
+        margin: 0.5em 0;
+    }
+
+    .content {
+        gap: 1em;
+    }
+
+    .intro {
+        grid-template-columns: 100%;
+    }
+
+    .education,
+    .experiences,
+    .testimonial,
+    .contact,
+    .other {
+        grid-template-columns: 100%;
+    }
+}
