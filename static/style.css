@@ -1,3 +1,15 @@
+* {
+    font-family:monospace;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+p {
+    font-size: 1.5em;
+}
+
 .container {
     display: grid;
     grid-template-columns: auto;
@@ -6,25 +18,31 @@
         "header"
         "content"
         "footer";
-    gap: 10px;
+    gap: 1em;
 }
 
 /* Header */
 .site-header {
     grid-area: header;
-}
-
-.site-header > p {
-    font-size: 2rem;
+    padding-left: 10em;
+    padding-right: 10em;
+    margin: 1em;
 }
 
 nav {
-    background-color: powderblue;
-    padding: 10px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+
 }
 
 nav > a {
-    color: black;
+    color:#555;
+    font-style: normal;
+    cursor: pointer;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
 }
 
 /* Content */
@@ -40,7 +58,7 @@ nav > a {
         "testimonial"
         "contact"
         "other";
-    gap: 10px;
+    gap: 2em;
 }
 
 
@@ -52,7 +70,7 @@ nav > a {
     grid-template-rows: auto;
     grid-template-areas:
         "intro-photo intro-detail intro-detail intro-detail";
-    gap: 10px;
+    gap: 2em;
 }
 
 .intro-photo {
@@ -71,7 +89,7 @@ nav > a {
     grid-template-rows: auto;
     grid-template-areas:
         "education-photo education-detail education-detail education-detail";
-    gap: 10px;
+    gap: 2em;
 }
 
 .experience {
@@ -81,7 +99,7 @@ nav > a {
     grid-template-rows: auto;
     grid-template-areas:
         "experience-photo experience-detail experience-detail experience-detail";
-    gap: 10px;
+    gap: 2em;
 }
 
 .testimonial {
@@ -91,7 +109,7 @@ nav > a {
     grid-template-rows: auto;
     grid-template-areas:
         "testimonial-photo testimonial-detail testimonial-detail testimonial-detail";
-    gap: 10px;
+    gap: 2em;
 }
 
 .contact {
@@ -101,7 +119,7 @@ nav > a {
     grid-template-rows: auto;
     grid-template-areas:
         "contact-photo contact-detail contact-detail contact-detail";
-    gap: 10px;
+    gap: 2em;
 }
 
 .other {
@@ -111,7 +129,7 @@ nav > a {
     grid-template-rows: auto;
     grid-template-areas:
         "other-photo other-detail other-detail other-detail";
-    gap: 10px;
+    gap: 2em;
 }
 
 /* Footer */
@@ -119,7 +137,7 @@ nav > a {
     grid-area: footer;
     background-color: #E5E5E5;
     color: black;
-    padding-left: 10px;
+    padding-left: 2em;
 }
 
 
