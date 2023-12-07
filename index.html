@@ -17,10 +17,20 @@
     <div class="container">
         <!-- Header & Nav bar -->
         <header class="site-header">
-            <nav>
+            <a class="collapsible">Navigation</a>
+            <nav class="navbar">
                 <a href="#intro">Intro</a>
                 <a href="#education">Education</a>
-                <a href="#experience">Experience</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Experiences</button>
+                    <div class="dropdown-content">
+                        <a href="#FoodWithBuddies">Food With Buddies</a>
+                        <a href="#RoverC">RoverC</a>
+                        <a href="#WebReg">Web Registration</a>
+                        <a href="#Server">Web & Mail Server</a>
+                        <a href="#HuaweiICT">Huawei ICT</a>
+                    </div>
+                </div>
                 <a href="#testimonial">Testimonial</a>
                 <a href="#contact">Contact</a>
                 <a href="#other">Other</a>
@@ -33,10 +43,10 @@
             <!-- Introduction -->
             <div class="intro" id="intro">
                 <!-- Photo -->
-                <img src="static/Pond.jpg" alt="Pond" class="intro-photo">
+                <img src="static/Pond.jpg" alt="Pond" class="">
 
                 <!-- Detail -->
-                <div class="intro-detail">
+                <div class="">
                     <h2>My Profile</h2>
                     <p>Name: Thammasat Thonggamgaew</p>
                     <p>Nickname: Pond</p>
@@ -47,8 +57,8 @@
             <!-- Education -->
             <div class="education" id="education">
                 <h2>Education</h2><span></span>
-                    <p>Computer Engineering, Thammasat University 3rd year, GPA: 3.54</p>
-                    <p>Bachelor of Accountancy, Sukhothai Thammathirat Open University</p>
+                <p>Computer Engineering, Thammasat University 3rd year, GPA: 3.54</p>
+                <p>Bachelor of Accountancy, Sukhothai Thammathirat Open University</p>
             </div>
 
             <!-- Experience & Certificate -->
@@ -56,19 +66,19 @@
                 <h2 class="experience-topic">Experiences</h2><span></span>
 
                 <!-- Food With Buddies -->
-                    <img src="static/fwb.png" alt="Food With Buddies" class="experience-photo">
-                    <div id="FoodWithBuddies" class="experience-detail">
-                        <h3>Food With Buddies</h3>
-                        <details open>
-                            <summary>Django Web Application</summary>
-                            <p>Food with Buddies is the web application that user can find friends for eating. User can
-                                create chat group and add preference of the chat such as Food category, Date of meeting,
-                                etc.
-                                With Food with Buddies, anyone doesn’t have to eat alone.</p>
-                            <p>Visit my web project: <a
-                                    href="https://fwb.thammasat.online.th">https://fwb.thammasat.online.th</a></p>
-                        </details>
-                    </div>
+                <img src="static/fwb.png" alt="Food With Buddies" class="experience-photo">
+                <div id="FoodWithBuddies" class="experience-detail">
+                    <h3>Food With Buddies</h3>
+                    <details open>
+                        <summary>Django Web Application</summary>
+                        <p>Food with Buddies is the web application that user can find friends for eating. User can
+                            create chat group and add preference of the chat such as Food category, Date of meeting,
+                            etc.
+                            With Food with Buddies, anyone doesn’t have to eat alone.</p>
+                        <p>Visit my web project: <a
+                                href="https://fwb.thammasat.online.th">https://fwb.thammasat.online.th</a></p>
+                    </details>
+                </div>
 
                 <!-- RoverC -->
                 <img src="static/RoverC.jpg" alt="RoverC" class="experience-photo">
@@ -125,12 +135,12 @@
             <!-- Contact -->
             <div class="contact" id="contact">
                 <h2>Contact</h2>
-                    <ul>
-                        <li>Tel: +66877044428</li>
-                        <li>Email: pond.thammasat@gmail.com</li>
-                        <li>University Email: thammasat.tho@dome.tu.ac.th</li>
-                        <li>Faculty Email: 6410685033@student.tu.ac.th</li>
-                    </ul>
+                <ul>
+                    <li>Tel: +66877044428</li>
+                    <li>Email: pond.thammasat@gmail.com</li>
+                    <li>University Email: thammasat.tho@dome.tu.ac.th</li>
+                    <li>Faculty Email: 6410685033@student.tu.ac.th</li>
+                </ul>
             </div>
 
             <!-- Other -->
@@ -173,6 +183,23 @@
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
     </script>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
 
 </body>
 
