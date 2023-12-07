@@ -51,20 +51,85 @@
 
             <!-- Experience & Certificate -->
             <div class="experience" id="experience">
-                <h2>Experience</h2>
-                <p>Cert</p>
+                <h2 class="experience-topic">Experience</h2>
+                <!-- Food With Buddies -->
+                <img src="" alt="">
+                <div id="FoodWithBuddies">
+                    <h3>Food With Buddies</h3>
+                    <details open>
+                        <summary>Django Web Application</summary>
+                        <p>Food with Buddies is the web application that user can find friends for eating. User can
+                            create chat group and add preference of the chat such as Food category, Date of meeting,
+                            etc.
+                            With Food with Buddies, anyone doesn’t have to eat alone.</p>
+                        <p>Visit my web project: <a
+                                href="https://fwb.thammasat.online.th">https://fwb.thammasat.online.th</a></p>
+                    </details>
+                </div>
+
+                <!-- RoverC -->
+                <img src="static/RoverC.jpg" alt="RoverC">
+                <div id="RoverC">
+                    <h3>RoverC</h3>
+                    <details open>
+                        <summary>RoverC Arduino with Raspberry PI and Jetson Nano</summary>
+                        <p>RoverC is a Mecanum wheel robot that using M5Stick to control it. In this project, we use
+                            Raspberry PI to control RoverC by sending data using MQTT Protocol. By using Leafhat, we can
+                            use
+                            joystick PI to send data to M5Stick. We add object detection for detect RoverC and
+                            destination using Jetson Nano
+                            and that’s it, RoverC can move now.</p>
+                    </details>
+                </div>
+
+                <!-- Web Reg -->
+                <img src="" alt="">
+                <div id="WebReg">
+                    <h3>Django Web Registration Application</h3>
+                    <details open>
+                        <summary>Django Web Application</summary>
+                        <p>Web application for register, withdraw, and view detail of each course.</p>
+                    </details>
+                </div>
+
+                <!-- Web & Mail Server -->
+                <img src="" alt="">
+                <div id="Server">
+                    <h3>Web Server and Mail Server configuration</h3>
+                    <details open>
+                        <summary>Server configuration</summary>
+                        <p>Linux, Cloud Server, DNS, MySQL, Mail Server, Roundcube, etc.</p>
+                    </details>
+                </div>
+
+                <!-- Huawei ICT -->
+                <img src="" alt="">
+                <div id="HuaweiICT">
+                    <h3>Huawei ICT Competition 2023-24 (Achieve 3rd) </h3>
+                    <details open>
+                        <summary>Prelimary Round</summary>
+                        <p>Prelimary Round: Computing Track, 25 Nov 2023</p>
+                    </details>
+                </div>
             </div>
 
             <!-- Testimonial -->
             <div class="testimonial" id="testimonial">
                 <h2>Testimonial</h2>
-                <p>eiei</p>
+                <p></p>
             </div>
 
             <!-- Contact -->
             <div class="contact" id="contact">
                 <h2>Contact</h2>
-                <p>Tel: +66877044428</p>
+                <div>
+                    <ul>
+                        <li>Tel: +66877044428</li>
+                        <li>Email: pond.thammasat@gmail.com</li>
+                        <li>University Email: thammasat.tho@dome.tu.ac.th</li>
+                        <li>Faculty Email: 6410685033@student.tu.ac.th</li>
+                    </ul>
+                </div>
             </div>
 
             <!-- Other -->
@@ -91,7 +156,7 @@
         let mybutton = document.getElementById("toTopBtn");
 
         // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function() { scrollFunction() };
+        window.onscroll = function () { scrollFunction() };
 
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {

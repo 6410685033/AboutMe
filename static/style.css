@@ -6,6 +6,10 @@ h2 {
     font-size: 2.5em;
 }
 
+h3 {
+    font-size: 2em;
+}
+
 p {
     font-size: 1.5em;
 }
@@ -85,27 +89,32 @@ nav > a {
 .education {
     grid-area: education;
     display: grid;
-    grid-template-columns:25% 25% 25% 25%;
+    grid-template-columns:25% 75%;
     grid-template-rows: auto;
     grid-template-areas:
-        "education-photo education-detail education-detail education-detail";
+        "education-photo education-detail";
     gap: 2em;
 }
 
 .experience {
     grid-area: experience;
     display: grid;
-    grid-template-columns:25% 25% 25% 25%;
-    grid-template-rows: auto;
+    grid-template-columns:25% 75%;
+    grid-template-rows: auto auto;
     grid-template-areas:
-        "experience-photo experience-detail experience-detail experience-detail";
+        "experience-topic experience-topic"
+        "experience-photo experience-detail";
     gap: 2em;
+}
+
+.experience-topic {
+    grid-area: experience-topic;
 }
 
 .testimonial {
     grid-area: testimonial;
     display: grid;
-    grid-template-columns:25% 25% 25% 25%;
+    grid-template-columns:25% 75%;
     grid-template-rows: auto;
     grid-template-areas:
         "testimonial-photo testimonial-detail testimonial-detail testimonial-detail";
@@ -115,7 +124,7 @@ nav > a {
 .contact {
     grid-area: contact;
     display: grid;
-    grid-template-columns:25% 25% 25% 25%;
+    grid-template-columns:25% 75%;
     grid-template-rows: auto;
     grid-template-areas:
         "contact-photo contact-detail contact-detail contact-detail";
@@ -125,7 +134,7 @@ nav > a {
 .other {
     grid-area: other;
     display: grid;
-    grid-template-columns:25% 25% 25% 25%;
+    grid-template-columns:25% 75%;
     grid-template-rows: auto;
     grid-template-areas:
         "other-photo other-detail other-detail other-detail";
