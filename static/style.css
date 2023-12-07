@@ -66,13 +66,14 @@ nav>a {
     font-style: normal;
     cursor: pointer;
     text-decoration: none;
-    margin-left: 1em;
-    margin-right: 1em;
+    margin: 1em 0;
 }
 
 /* Dropdown menu styles */
 .dropdown {
     display: inline-block;
+    margin: 0.5em 0;
+    align-self:center;
 }
 
 .dropbtn {
@@ -111,10 +112,10 @@ nav>a {
     display: none;
 }
 
-.active,
+/* .active,
 .collapsible:hover {
     background-color: #555;
-}
+} */
 
 
 /* Content */
@@ -165,7 +166,7 @@ nav>a {
 .experiences {
     grid-area: experiences;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: 25% auto;
     grid-auto-rows: auto;
     gap: 2em;
 }
@@ -246,6 +247,7 @@ nav>a {
 
     .dropdown {
         display: inline-block;
+        align-self: normal;
     }
 
     .dropdown:hover .dropdown-content {

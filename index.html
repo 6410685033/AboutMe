@@ -22,7 +22,7 @@
                 <a href="#intro">Intro</a>
                 <a href="#education">Education</a>
                 <div class="dropdown">
-                    <button class="dropbtn">Experiences</button>
+                    <a href="#experiences" class="dropbtn">Experiences</a>
                     <div class="dropdown-content">
                         <a href="#FoodWithBuddies">Food With Buddies</a>
                         <a href="#RoverC">RoverC</a>
@@ -192,10 +192,10 @@
           coll[i].addEventListener("click", function() {
             this.classList.toggle("active");
             var content = this.nextElementSibling;
-            if (content.style.display === "block") {
+            if (content.style.display === "flex") {
               content.style.display = "none";
             } else {
-              content.style.display = "block";
+              content.style.display = "flex";
             }
           });
         }
