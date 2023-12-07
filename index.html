@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,36 +8,107 @@
     <!-- <link rel="icon" href="ben10icon.png" type="image/icon type"> -->
     <title>Thammasat T.</title>
 </head>
+
 <body>
+
+    <!-- to Top of page Button -->
+    <button onclick="topFunction()" id="toTopBtn" title="Go to top">Top</button>
+
     <div class="container">
+        <!-- Header & Nav bar -->
         <header class="site-header">
-            Welcome to Pond's Website :)
-            <a href="#">Thammasat Thonggamgaew</a>
+            <p>Welcome to Pond's Website :)</p>
+            <nav>
+                <a href="#intro">intro</a>
+                <a href="#education">education</a>
+                <a href="#experience">experience</a>
+                <a href="#testimonial">testimonial</a>
+                <a href="#contact">contact</a>
+                <a href="#other">other</a>
+            </nav>
         </header>
 
+        <!-- Content -->
         <div class="content">
-            <img src="static/Pond.jpg" alt="Pond" class="my-img" width="300">
 
-            <div class="detail">
-                <h2>My Profile</h2>
-                <p>Name: Thammasat Thonggamgaew</p>
-                <p>Nickname: Pond</p>
-                <p>Computer Engineering</p>
-                <p>Thammasat University</p>
+            <!-- Introduction -->
+            <div class="intro" id="intro">
+                <!-- Photo -->
+                <img src="static/Pond.jpg" alt="Pond" class="intro-photo">
+
+                <!-- Detail -->
+                <div class="intro-detail">
+                    <h2>My Profile</h2>
+                    <p>Name: Thammasat Thonggamgaew</p>
+                    <p>Nickname: Pond</p>
+                </div>
+            </div>
+
+            <!-- Education -->
+            <div class="education" id="education">
+                <h2>Education</h2>
+                <p>Education: </p>
+            </div>
+
+            <!-- Experience & Certificate -->
+            <div class="experience" id="experience">
+                <h2>Experience</h2>
+                <p>Cert</p>
+            </div>
+
+            <!-- Testimonial -->
+            <div class="testimonial" id="testimonial">
+                <h2>Testimonial</h2>
+                <p>eiei</p>
+            </div>
+
+            <!-- Contact -->
+            <div class="contact" id="contact">
+                <h2>Contact</h2>
+                <p>Tel: </p>
+            </div>
+
+            <!-- Other -->
+            <div class="other" id="other">
+                <h2>Other</h2>
+                <p>Eiei</p>
             </div>
         </div>
 
-    <div class="site-footer">
-        <h2>Contact me</h2>
-        <ul>
-            <li>0877044428</li>
-            <li>pond.thammasat@gmail.com</li>
-            <li>thammasat.tho@dome.tu.ac.th</li>
-            <li>6410685033@student.tu.ac.th</li>
-            <li><a href="https://www.facebook.com/profile.php?id=100008187226133">Facebook</a></li>
-        </ul>
+        <!-- Footer -->
+        <div class="site-footer">
+            <!-- Contact -->
+            <h2>Contact me</h2>
+            <ul>
+                <li>Tel: </li>
+                <li>Email: </li>
+                <li><a href="https://www.facebook.com/profile.php?id=100008187226133">Facebook</a></li>
+            </ul>
+        </div>
     </div>
-    <br>
-    </div>
+
+    <script>
+        // Get the button:
+        let mybutton = document.getElementById("toTopBtn");
+
+        // When the user scrolls down 20px from the top of the document, show the button
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+            } else {
+                mybutton.style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0; // For Safari
+            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+        }
+    </script>
+
 </body>
+
 </html>
