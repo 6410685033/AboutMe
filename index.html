@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="static/style.css" type="text/css" rel="stylesheet">
-    <!-- <link rel="icon" href="ben10icon.png" type="image/icon type"> -->
+    <script src="https://kit.fontawesome.com/6e356195e6.js" crossorigin="anonymous"></script>
     <title>Thammasat T.</title>
 </head>
 
@@ -31,7 +31,7 @@
                         <a href="#HuaweiICT">Huawei ICT</a>
                     </div>
                 </div>
-                <a href="#testimonial">Testimonial</a>
+                <!-- <a href="#testimonial">Testimonial</a> -->
                 <a href="#contact">Contact</a>
                 <a href="#other">Other</a>
             </nav>
@@ -48,15 +48,28 @@
                 <!-- Detail -->
                 <div class="">
                     <h2>My Profile</h2>
-                    <p>Name: Thammasat Thonggamgaew</p>
-                    <p>Nickname: Pond</p>
-                    <p>President of Thammasat University Symphony Orchestra (TUSO)</p>
+                    <ul>
+                        <li>Name: Thammasat Thonggamgaew</li>
+                        <li>Nickname: Pond</li>
+                        <li>President of <a href="https://www.facebook.com/tuorchestra">Thammasat University Symphony
+                                Orchestra (TUSO)</a></li>
+                    </ul>
+                    <div class="social">
+                        <a href="https://github.com/6410685033"><i class="fab fa-github"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100008187226133"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="https://www.youtube.com/@pond_rep"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/pond_rep/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/p’pond-thammasat-363a62299/"><i
+                                class="fab fa-linkedin"></i></a>
+                    </div>
+
                 </div>
             </div>
 
             <!-- Education -->
             <div class="education" id="education">
-                <h2>Education</h2><span></span>
+                <h2>Education</h2>
                 <p>Computer Engineering, Thammasat University 3rd year, GPA: 3.54</p>
                 <p>Bachelor of Accountancy, Sukhothai Thammathirat Open University</p>
             </div>
@@ -126,11 +139,11 @@
                 </div>
             </div>
 
-            <!-- Testimonial -->
+            <!-- Testimonial
             <div class="testimonial" id="testimonial">
                 <h2>Testimonial</h2>
                 <p></p>
-            </div>
+            </div> -->
 
             <!-- Contact -->
             <div class="contact" id="contact">
@@ -153,12 +166,21 @@
         <!-- Footer -->
         <div class="site-footer">
             <!-- Contact -->
-            <h2>Contact me</h2>
+            <h3>Contact me</h3>
             <ul>
                 <li>Tel: +66877044428</li>
                 <li>Email: pond.thammasat@gmail.com</li>
-                <li><a href="https://www.facebook.com/profile.php?id=100008187226133">Facebook</a></li>
+                <li>University Email: thammasat.tho@dome.tu.ac.th</li>
+                <li>Faculty Email: 6410685033@student.tu.ac.th</li>
             </ul>
+
+            <div class="social">
+                <a href="https://github.com/6410685033"><i class="fab fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100008187226133"><i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@pond_rep"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/pond_rep/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/p’pond-thammasat-363a62299/"><i class="fab fa-linkedin"></i></a>
+            </div>
         </div>
     </div>
 
@@ -187,19 +209,19 @@
     <script>
         var coll = document.getElementsByClassName("collapsible");
         var i;
-        
+
         for (i = 0; i < coll.length; i++) {
-          coll[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var content = this.nextElementSibling;
-            if (content.style.display === "flex") {
-              content.style.display = "none";
-            } else {
-              content.style.display = "flex";
-            }
-          });
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "flex") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "flex";
+                }
+            });
         }
-        </script>
+    </script>
 
 </body>
 

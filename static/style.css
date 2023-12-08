@@ -5,6 +5,7 @@
 
 h2 {
     font-size: 2.5em;
+    margin: 0.2em 0;
 }
 
 h3 {
@@ -12,7 +13,42 @@ h3 {
 }
 
 p {
-    font-size: 1.5em;
+    font-size: 1em;
+}
+
+ul {
+    list-style-type: disc;
+    /* Set the list item marker to a filled circle */
+    margin: 1em 0;
+    /* Add margin to the top and bottom of the list */
+    padding: 1em;
+    /* Remove default padding */
+}
+
+/* Basic styling for list items */
+li {
+    margin-bottom: 8px;
+    /* Add margin at the bottom of each list item */
+}
+
+/* Basic styling for the anchor tag */
+a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: transform 0.2s ease-in-out;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #0056b3;
+    transform: scale(1.1);
+}
+
+i {
+    margin: 0 10px;
+    color: initial;
 }
 
 img {
@@ -38,22 +74,6 @@ img {
     margin: 1em;
 }
 
-nav {
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-
-}
-
-nav>a {
-    color: #555;
-    font-style: normal;
-    cursor: pointer;
-    text-decoration: none;
-    margin-left: 1em;
-    margin-right: 1em;
-}
-
 /* Nav bar styles for wide screens */
 .navbar {
     background-color: white;
@@ -69,11 +89,15 @@ nav>a {
     margin: 1em 0;
 }
 
+.navbar>a:hover {
+    transform: scale(1.5);
+}
+
 /* Dropdown menu styles */
 .dropdown {
     display: inline-block;
     margin: 0.5em 0;
-    align-self:center;
+    align-self: center;
 }
 
 .dropbtn {
@@ -91,6 +115,7 @@ nav>a {
     background-color: white;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     z-index: 1;
+    transition: max-height 0.3s ease-in-out;
 }
 
 .dropdown-content a {
@@ -131,7 +156,7 @@ nav>a {
         "testimonial"
         "contact"
         "other";
-    gap: 2em;
+    gap: 4em;
 }
 
 
@@ -147,12 +172,18 @@ nav>a {
 .intro-photo {
     grid-area: intro-photo;
     width: 100%;
-    
-
 }
 
 .intro-detail {
     grid-area: intro-detail;
+}
+
+.social {
+    margin: 1em 0;
+}
+
+.social a:hover {
+    transform: scale(1.5);
 }
 
 .education {
@@ -160,15 +191,15 @@ nav>a {
     display: grid;
     grid-template-columns: auto;
     grid-auto-rows: auto;
-    gap: 2em;
+    gap: 0.5em;
 }
 
 .experiences {
     grid-area: experiences;
     display: grid;
-    grid-template-columns: 25% auto;
+    grid-template-columns: 20% auto;
     grid-auto-rows: auto;
-    gap: 2em;
+    gap: 0.5em 2.5em;
 }
 
 .testimonial {
@@ -176,23 +207,23 @@ nav>a {
     display: grid;
     grid-template-columns: auto auto;
     grid-auto-rows: auto;
-    gap: 2em;
+    gap: 0.5em;
 }
 
 .contact {
     grid-area: contact;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-auto-rows: auto;
-    gap: 2em;
+    gap: 0.5em;
 }
 
 .other {
     grid-area: other;
     display: grid;
-    grid-template-columns: auto auto;
+    grid-template-columns: auto;
     grid-template-rows: auto;
-    gap: 2em;
+    gap: 0.5em;
 }
 
 /* Footer */
